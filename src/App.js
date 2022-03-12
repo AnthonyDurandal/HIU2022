@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import './styles/App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
