@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
+import Login from "./pages/Login";
 import './styles/App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/Accueil" exact="true" element={<Accueil />} />
           <Route path="/about" exact="true" element={<Accueil />} />
-          <Route path="/login" exact="true" element={<Accueil />} />
+          <Route path="/login" exact="true" element={<Login />} />
           <Route path="/register" exact="true" element={<Accueil />} />
           <Route path="/forgot-password" exact="true" element={<Accueil />} />
           <Route path="/reset-password" exact="true" element={<Accueil />} />
