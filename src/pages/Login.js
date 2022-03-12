@@ -10,7 +10,7 @@ function Login(props){
     // const [apiLink,] = useGlobalState('apiLink')
     const navigate = useNavigate()
     const [email,setEmail] = useState(null)
-    // const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
+    const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
     const [mdp, setMdp] = useState(null)
     const [loginError, setLoginError] = useState(null) 
     const [loading , setLoading] = useState(false)
@@ -58,11 +58,11 @@ function Login(props){
                 }
             }else{
                 setLoginError("Login ou mots de passe incorrect.")
-            //       setNotify({
-            //         isOpen: true,
-            //         message: 'Login ou mot de passe incorrect',
-            //         type: 'error'
-            // })
+                  setNotify({
+                    isOpen: true,
+                    message: 'Login ou mot de passe incorrect',
+                    type: 'error'
+            })
             }
         });
     }
@@ -133,10 +133,10 @@ function Login(props){
                     </div>
                 </div>
             </div>
-            {/* <Notification
+             <Notification
                 notify={notify}
                 setNotify={setNotify}
-            /> */}
+            />
         </div>
     );
 }
