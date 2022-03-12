@@ -1,30 +1,27 @@
 import React, { useCallback } from 'react';
 import { useState } from "react"
 import "../styles/Login.css"
-// import Notification from "../components/Notification"
+import Notification from "../components/notification/Notification"
 import {ThreeDots } from 'react-loader-spinner';
+import { useNavigate } from 'react-router-dom';
 // import { useGlobalState } from 'state-pool';
 
 function Login(props){
     // const [apiLink,] = useGlobalState('apiLink')
+    const navigate = useNavigate()
     const [email,setEmail] = useState(null)
     // const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
     const [mdp, setMdp] = useState(null)
     const [loginError, setLoginError] = useState(null) 
     const [loading , setLoading] = useState(false)
 
-    // const [user,setUser, updateUser]= useGlobalState("user")
-    // let saveUser= (newUser) =>{
-    //     updateUser(function(user){
-    //         console.log(newUser)
-    //         var nom = Object.keys(newUser)
-    //         nom.forEach(element => {
-    //             user[element] = newUser[element]
-    //         });
-    //     })
-    //     console.log(user)
-    // }
-    const doLogin = () => {
+   
+    const doLogin = async() => {
+        //TEST/////////////// MIANDRY 2s AVANT LA REDIRECTION ******** MILA ESORINA 
+        setTimeout(function () {
+                navigate("/accueil")
+        }, 2000);
+        //////////////////////////////*********************////////////////////////
         setLoading(true)
         console.log(JSON.stringify({ username: email, password: mdp}));
         var apiLink =""
