@@ -40,7 +40,7 @@ const TableT = ({ data, crud, infoFunction, modifyFunction, deleteFunction }) =>
 
     return (
         <>
-            <Table striped bordered hover>
+            <Table striped hover>
                 <thead>
                     <tr>
                         {
@@ -50,9 +50,9 @@ const TableT = ({ data, crud, infoFunction, modifyFunction, deleteFunction }) =>
                         }
                         {
                             crud && <>
-                                <th className="text-center">Info</th>
-                                <th className="text-center">Modifier</th>
-                                <th className="text-center">Supprimer</th>
+                                <th className="text-center"></th>
+                                <th className="text-center"></th>
+                                <th className="text-center"></th>
                             </>
                         }
                     </tr>
