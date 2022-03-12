@@ -2,15 +2,19 @@ import React, { useCallback } from 'react';
 import { useState } from "react"
 import "../styles/Login.css"
 import Notification from "../components/notification/Notification"
+import ConfirmDialog from "../components/alert/ConfirmDialog"
 import {ThreeDots } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 // import { useGlobalState } from 'state-pool';
 
 function Login(props){
+    //Notif
+    const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
+    //Alert
+    const [confirmDialog, setConfirmDialog] = useState({ isOpen: false, title: '', subTitle: '' })
     // const [apiLink,] = useGlobalState('apiLink')
     const navigate = useNavigate()
     const [email,setEmail] = useState(null)
-    const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
     const [mdp, setMdp] = useState(null)
     const [loginError, setLoginError] = useState(null) 
     const [loading , setLoading] = useState(false)
@@ -19,7 +23,13 @@ function Login(props){
     const doLogin = async() => {
         //TEST/////////////// MIANDRY 2s AVANT LA REDIRECTION ******** MILA ESORINA 
         setTimeout(function () {
-                navigate("/accueil")
+            setConfirmDialog({
+                isOpen: true,
+                title: 'Etes-vous sûr?',
+                subTitle: "Cette action est irréversible",
+                onConfirm: () => { navigate("/accueil") }
+            })
+                
         }, 2000);
         //////////////////////////////*********************////////////////////////
         setLoading(true)
@@ -136,6 +146,10 @@ function Login(props){
              <Notification
                 notify={notify}
                 setNotify={setNotify}
+            />
+            <ConfirmDialog
+                confirmDialog={confirmDialog}
+                setConfirmDialog={setConfirmDialog}
             />
         </div>
     );
