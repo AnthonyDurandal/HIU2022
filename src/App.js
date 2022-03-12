@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Test from './testing/Test';
+import { Store } from "state-pool";
+
+/* config */
+const herokuLink = "https://tatitra-rest-api.herokuapp.com";
+const localLink = "http://localhost:8087";
+const fakeDataLink = "https://datausa.io"
+
+// const store = Store()
+// store.setState("apiLink", fakeDataLink);
+export const apiLink = fakeDataLink
+export const chartCssDefaultPath = '../../styles/chart/ChartCssDefault.css'
+/* config ends */
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Test />
     </div>
   );
 }
