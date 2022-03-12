@@ -3,6 +3,17 @@ import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
 import './App.css'
 
+/* config */
+const herokuLink = "https://tatitra-rest-api.herokuapp.com";
+const localLink = "http://localhost:8087";
+const fakeDataLink = "https://datausa.io"
+
+// const store = Store()
+// store.setState("apiLink", fakeDataLink);
+export const apiLink = fakeDataLink
+export const chartCssDefaultPath = '../../styles/chart/ChartCssDefault.css'
+/* config ends */
+
 function App() {
   return (
     <div className="App">
