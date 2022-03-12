@@ -10,16 +10,9 @@ import '../styles/chart/ChartCssDefault.css'
 const Test = () => {
     useEffect(() => {
         // getData("http://localhost:8080/getData", null)
-        console.log('naka data')
+        
     }, [])
 
-    const variable = {
-        'ok':'value1',
-        'notok' : 'value2'
-    }
-    console.log(variable['ok'])
-
-    const chartData = [12,13,5,2,28,3]
     return (
         <div className={"chartRow"} width={"100vh"}>
             <ChartContainer 

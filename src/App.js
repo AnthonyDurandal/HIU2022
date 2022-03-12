@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
 import './App.css'
+import Test from "./testing/Test";
 
 /* config */
 const herokuLink = "https://tatitra-rest-api.herokuapp.com";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/history" exact="true" element={<Accueil />} />
           <Route path="/support" exact="true" element={<Accueil />} />
           <Route path="/report-bug" exact="true" element={<Accueil />} />
+          <Route path="/test" exact="true" element={<Test />} />
           <Route path="/" exact="true" element={<Accueil />} />
         </Routes>
       </BrowserRouter>
