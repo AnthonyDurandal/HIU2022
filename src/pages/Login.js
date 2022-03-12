@@ -19,7 +19,15 @@ function Login(props){
     const [loginError, setLoginError] = useState(null) 
     const [loading , setLoading] = useState(false)
 
-   
+    document.addEventListener('keydown', logKey);
+
+    function logKey(e) {
+        // log.textContent += ` ${e.code}`;
+        if(e.code === "Enter"){
+            doLogin();
+        }
+    }
+
     const doLogin = async() => {
         //TEST/////////////// MIANDRY 2s AVANT LA REDIRECTION ******** MILA ESORINA 
         setTimeout(function () {
