@@ -17,14 +17,14 @@ export default async function fetchData(request)
         console.log('options')
         console.log(options)
         fetch(lien, options)
-            // .then(response => response.json())
-            // .then(response => console.log(response))
-        //     .then((jsonData) => {
-        //         if (request.functionToExecute){
-        //             request.functionToExecute(jsonData.data)
-        //         }
-        //         return jsonData.data
-        //     });
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .then((jsonData) => {
+                if (request.functionToExecute){
+                    request.functionToExecute(jsonData.data)
+                }
+                return jsonData.data
+            });
 }
 
 async function verifyRequestMethod(requestMethod){
