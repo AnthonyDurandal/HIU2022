@@ -2,7 +2,7 @@
   display: grid;
   width: 30%;
   padding: 10px 20px;
-  grid-template-columns: 1fr 40px 40px;
+  grid-template-columns: 1fr 40px;
   grid-template-rows: auto;
   grid-gap: 1em;
 }
@@ -11,10 +11,15 @@
   display: flex;
   align-items: center;
 }
-.checkBoxContainer {
+
+input[type="checkbox" i] {
+    background: blue;
+    color: white;
+}
+/* .checkBoxContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 .textQuestion {
   height: 100%;
   display: flex;

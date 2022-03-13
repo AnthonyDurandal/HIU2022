@@ -6,8 +6,8 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
     if (choix != null) {
       if (checked) {
         console.log(listeChoix);
-        options = choix.map((opt) => {
-          return <option>{opt}</option>;
+        options = choix.map((opt, index) => {
+          return <option key={index}>{opt}</option>;
         });
         return (
           <div className="choix show">
@@ -26,7 +26,6 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
       return (
         <>
           <div className="checkBox">
-            OUI
             <div className="checkBoxContainer">
               {checked ? (
                 <input
@@ -39,40 +38,14 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
               )}
             </div>
           </div>
-          <div className="checkBox">
-            NON
-            <div className="checkBoxContainer">
-              <div className="checkBoxContainer">
-                {checked ? (
-                  <input
-                    onChange={() => setState(false)}
-                    type={"checkbox"}
-                  ></input>
-                ) : (
-                  <input
-                    onChange={() => setState(true)}
-                    type={"checkbox"}
-                    checked
-                  />
-                )}
-              </div>
-            </div>
-          </div>
         </>
       );
     } else {
       return (
         <>
           <div className="checkBox">
-            OUI
             <div className="checkBoxContainer">
               <input onChange={() => setState(true)} type={"checkbox"} />
-            </div>
-          </div>
-          <div className="checkBox">
-            NON
-            <div className="checkBoxContainer">
-              <input onChange={() => setState(false)} type={"checkbox"} />
             </div>
           </div>
         </>
