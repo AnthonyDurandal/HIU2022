@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { TestAptitude } from "./pages/TestAptitude";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 import AjoutStock from "./pages/AjoutStock";
+import { Questionaire } from "./components/questionaire/questionaire";
 /* config */
 const onlineLink = herokuLink;
 const lienLocal = localLink;

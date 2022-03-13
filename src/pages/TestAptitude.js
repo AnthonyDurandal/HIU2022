@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { Questionaire } from "../components/questionaire/questionaire";
-
+import Sidebar from '../components/sidebar/Sidebar';
+import DashboardHeader from '../components/header/DashboardHeader';
+import { Modal, Button } from 'react-bootstrap';
+// import './../styles/AdminDashboard.css'
+import './../styles/TestAptitude.css'
 export const TestAptitude = () => {
   const questionTestPcr =
-    "Avez-vous eu un test (PCR ou antigénique) positif au cours des trois derniers mois";
+    "Avez-vous eu un test (PCR ou antigénique) positif au cours des 3 derniers mois";
   const [testPcr, setTestPcr] = useState();
 
   const questionVaccinRencent =
-    "Avez-vous reçu un vaccin au cours des deux dernières semaines ?";
+    "Avez-vous reçu un vaccin au cours des 2 dernières semaines ?";
   const listeChoix = ["vaccin1", "vaccin2", "vaccin3"];
   const [vaccinRecent, setVaccinRecent] = useState();
 
@@ -24,7 +28,12 @@ export const TestAptitude = () => {
   const questionAllaitement = "Allaitez-vous ?";
   const [allaitement, setAllaitement] = useState();
   return (
-    <div>
+    <div className='admin-dashboard'>
+      <Sidebar />
+      <DashboardHeader />
+      <div className='content'>
+    <div className="listeQuestionaire">
+      <div className="titre">Test d'aptitude au vaccin</div> 
       <Questionaire
         question={questionTestPcr}
         setState={setTestPcr}
@@ -61,6 +70,9 @@ export const TestAptitude = () => {
         setState={setAllaitement}
         checked={allaitement}
       ></Questionaire>
+      <Button variant="success">Valider</Button>
+    </div>
+    </div>
     </div>
   );
 };
