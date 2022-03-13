@@ -1,6 +1,13 @@
+import Select from "react-select";
 import "./questionaire.css";
 
 export const Questionaire = ({ question, setState, checked, choix }) => {
+  const aaaa = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+  ]
+
   const listeChoix = () => {
     let options = [];
     if (choix != null) {
@@ -11,10 +18,30 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
         });
         return (
           <div className="choix show">
-            Lequels ?
-            <select className="show">
+            <p>Lequels ?
+            {/* <select className="show">
               {options.map((oneOption) => oneOption)}
-            </select>
+            </select> */}
+            <Select
+              isMulti
+              options={aaaa}
+              onChange={(e) => {
+                if (e.length == 0){
+
+                } else {
+                  var temp = []
+                  e.map((res) => {
+                    // temp.push(res.value)
+                    console.log(res.value)
+                  })
+                  // changeIdTypeSignalement(temp)
+                }
+              }}
+              on
+              className='choixVaccin'
+              placeholder={<div>Nom du vaccin </div>}
+            />
+            </p> 
           </div>
         );
       }
