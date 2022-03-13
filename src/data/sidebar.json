@@ -4,16 +4,6 @@
         "icon": "bi-gear-fill",
         "childrens": [
             {
-                "title": "Ajout stock",
-                "icon": "bi-house-fill",
-                "path": "/AjoutStock"
-            },
-            {
-                "title": "TestAptitude",
-                "icon": "bi-house-fill",
-                "path": "/TestAptitude"
-            },
-            {
                 "title": "Home",
                 "icon": "bi-house-fill",
                 "path": "/"
@@ -137,5 +127,20 @@
         "title": "Table",
         "icon": "bi bi-table",
         "path": "/Table"
+    },
+    {
+        "title": "Ajout stock",
+        "icon": "bi-house-fill",
+        "path": "/AjoutStock"
+    },
+    {
+        "title": "TestAptitude",
+        "icon": "bi-house-fill",
+        "path": "/TestAptitude"
+    },
+    {
+        "title": "Historique Vaccin",
+        "icon": "bi-house-fill",
+        "path": "/HistoriqueVaccin"
     }
 ]
