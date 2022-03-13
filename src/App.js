@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
 import './App.css'
+import Test from "./testing/Test";
 import Table from "./pages/Table";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/support" exact="true" element={<Accueil />} />
           <Route path="/report-bug" exact="true" element={<Accueil />} />
           <Route path="/Table" exact="true" element={<Table />} />
+          <Route path="/test" exact="true" element={<Test />} />
           <Route path="/" exact="true" element={<Accueil />} />
         </Routes>
       </BrowserRouter>

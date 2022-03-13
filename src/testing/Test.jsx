@@ -6,20 +6,26 @@ import ChartContainer from '../components/chart/ChartContainer';
 import { getData } from '../components/chart/statFunctions';
 import { interpolateInferno, interpolateBlues, interpolateGreys, interpolateMagma, interpolateViridis } from 'd3-scale-chromatic'
 import '../styles/chart/ChartCssDefault.css'
+import fetchData from '../publicFunctions/publicFunctions';
 
 const Test = () => {
+    const request = {}
+    request.restUrl ='' //'api/v1/signalements'//"api/data?drilldowns=Nation&measures=Population"
+    request.method = "GET"
+    request.additionalHeader = null
+    request.tokenName = "tokenName"
+    request.contentTypeName = "json"
+    request.requestBody = {
+        name: "name",
+        mdp: "passwd"
+    }
+    request.functionToExecute = null
+    
     useEffect(() => {
         // getData("http://localhost:8080/getData", null)
-        console.log('naka data')
+        fetchData(request)
     }, [])
 
-    const variable = {
-        'ok':'value1',
-        'notok' : 'value2'
-    }
-    console.log(variable['ok'])
-
-    const chartData = [12,13,5,2,28,3]
     return (
         <div className={"chartRow"} width={"100vh"}>
             <ChartContainer 
