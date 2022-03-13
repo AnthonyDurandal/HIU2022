@@ -18,7 +18,7 @@ const CentreElement = (props) => {
                    <div className="button" onClick= {e =>{setModalOption({...modalOption , show : true})}}>Reserver</div>
                </div>
             </div>       
-            <PlanningModal option = {modalOption} closeFunction= {closeModal} />
+            <PlanningModal option={modalOption}  closeFunction= {closeModal} />
         </div>
     );
 };
