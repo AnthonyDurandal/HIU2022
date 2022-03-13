@@ -1,0 +1,77 @@
+.Carte {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+.Carte .leaflet-container {
+    width: 100%;
+    height: 100%;
+}
+
+.Carte .leaflet-popup-content-wrapper {
+    margin: 0;
+    margin-bottom: 5px;
+    width: 350px;
+    height: 72px;
+    background: #f9faf9;
+    color: rgb(49, 46, 46);
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 0px;
+    box-shadow: 1px 1px 5px 0px #555;
+}
+
+.Carte .leaflet-popup-content-wrapper a {
+    color: rgba(200, 200, 200, 0.1);
+}
+
+.Carte .leaflet-popup-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+}
+
+.Carte .imgPopupMap img {
+    width: 70px;
+    height: 70px;
+}
+
+.Carte .infoPopupMap {
+    padding-left: 5px;
+    line-height: 20px;
+    width: 280px;
+}
+
+.Carte .infoPopupMap p {
+    margin: 5px;
+}
+
+.Carte .infoPopupMap .Titre {
+    font-weight: 900;
+}
+
+.Carte .infoPopupMap {
+    padding-left: 10px;
+    grid-column: span 1;
+}
+
+.Carte .leaflet-popup-tip-container {
+    width: 50px;
+    height: 15px;
+}
+
+.Carte .leaflet-container .leaflet-control-attribution {
+    display: none;
+}
+
+.Carte .leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}

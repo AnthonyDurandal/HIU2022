@@ -1,0 +1,70 @@
+.element {
+    height: 10em;
+    padding: .1em;
+    margin: 0.5em;
+    border: 5px;
+    border-radius: .2em;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.element .meta {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+.element .meta .title {
+    display: flex;
+    /* border: 3px solid salmon; */
+}
+
+.element .meta .title .nom {
+    text-align: center;
+    padding: 3%;
+}
+
+.element img {
+
+    /* border-radius: 50%; */
+    /* padding: .1em; */
+    /* box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1); */
+}
+
+.button {
+    width: 100px !important;
+    border-radius: 3px;
+    /* color: aliceblue; */
+    /* border: 2px solid rgb(34, 140, 219) !important; */
+    border: 2px solid rgb(6, 209, 124) !important;
+    background-color: rgb(6, 209, 124) !important;
+    color: aliceblue !important;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    /*diseable text selection*/
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.button:hover {
+    background-color: white !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.button:active {
+    transform: translateY(1px);
+    color: rgba(0, 0, 0, 0.4) !important;
+    /* border: 2px solid rgb(9, 238, 143) !important; */
+}
