@@ -9,6 +9,7 @@ import { TestAptitude } from "./pages/TestAptitude";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 import AjoutStock from "./pages/AjoutStock";
 import HistoriqueVaccin from "./pages/HistoriqueVaccin";
+import { EtatStockVaccin } from "./pages/EtatStockVaccin";
 /* config */
 const onlineLink = herokuLink;
 const lienLocal = localLink;
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/EtatStockVaccin" exact="true" element={<EtatStockVaccin />}/>
           <Route path="/HistoriqueVaccin" exact="true" element={<HistoriqueVaccin />}/>
           <Route path="/AjoutStock" exact="true" element={<AjoutStock />}/>
           <Route path="/TestAptitude" exact="true" element={<TestAptitude />} />

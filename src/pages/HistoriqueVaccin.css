@@ -24,3 +24,36 @@
     height: 100%;
     justify-content: center;
 }
+.actionBar{
+    display: grid;
+    grid-template-columns: 80% 1fr;
+}
+.actionButton{
+    height: 75%;
+}
+
+.inputGroup{
+    display: grid;
+    grid-template-rows: auto;
+    margin: 15px 0px;
+}
+
+.inputGroup label, h1 {
+    font-weight: 600;
+    color: black;
+}
+.inputGroup input,select{
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.statForm{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+}
+.stat{
+    background-color: burlywood;
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+}

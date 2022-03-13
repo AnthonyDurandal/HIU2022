@@ -142,5 +142,10 @@
         "title": "Historique Vaccin",
         "icon": "bi-house-fill",
         "path": "/HistoriqueVaccin"
+    },
+    {
+        "title": "Etat Stock Vaccin",
+        "icon": "bi-house-fill",
+        "path": "/EtatStockVaccin"
     }
 ]

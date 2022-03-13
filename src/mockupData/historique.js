@@ -24,3 +24,25 @@ export const listeRappel = [
         vaccin: 'Jansen'
     },
 ];
+export const etatStockVaccin = [
+    {
+        vaccin: 'AstraZeneca',
+        dateDePeremption: '30/04/2022',
+        quantite: 20 
+    },
+    {
+        vaccin: 'Jansen',
+        dateDePeremption: '23/03/2022',
+        quantite: 12 
+    },
+    {
+        vaccin: 'Jansen',
+        dateDePeremption: '12/05/2022',
+        quantite: 20 
+    },
+    {
+        vaccin: 'Covi-shield',
+        dateDePeremption: '19/04/2022',
+        quantite: 7
+    },
+];
