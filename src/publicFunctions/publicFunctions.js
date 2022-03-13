@@ -1,4 +1,4 @@
-import { apiLink } from "../App"
+import { localLink } from "../config/Config"
 
 /* 
     parameters
@@ -9,7 +9,7 @@ export default async function fetchData(request)
 {
         await verifyRequestMethod(request.method)
         //const contentType = getRequestBodyType(request.contentTypeName)
-        const lien = apiLink+request.restUrl;
+    const lien = localLink+request.restUrl;
         //createHeader(additionalHeader, token, contentTypeNickName)
         const header = await createHeader(request.additionalHeader, request.tokenName, request.contentTypeName)
         // setFunction(dataForChart)
