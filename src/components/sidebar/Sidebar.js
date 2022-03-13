@@ -3,13 +3,14 @@ import SidebarItem from './SidebarItem';
 import items from './../../data/sidebar.json'
 import './../../styles/Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
         <div className='sidebar'>
             <div className='app-logo'>
-                LOGO
+                <img src="./img/syringe.png" width="50" height="50" alt=""></img>
+                <div className="logo-text">DOCTO-FOSIKA</div>
             </div>
-            {items.map((item, index) => <SidebarItem key={index} item={item}/>) }
+            {props.data.map((item, index) => <SidebarItem key={index} item={item}/>) }
         </div>
     );
 };

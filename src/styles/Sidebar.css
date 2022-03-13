@@ -2,7 +2,7 @@
     grid-row: span 2;
     width: 300px;
     flex-shrink: 0;
-    background: #263957;
+    background: rgb(34, 140, 219);
     height: 100%;
     overflow: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -10,8 +10,20 @@
 
 .app-logo {
     padding: .75em 1em;
-    display: block;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
     height: 56px;
+}
+
+.app-logo img{
+    /* border:1px solid black */
+}
+.app-logo .logo-text{
+    /* border: 2px solid black; */
+    padding: 10px 5px;
+    display: flex;
+    text-align: center;
+    font-weight: 600;
 }
 
 /* width */
