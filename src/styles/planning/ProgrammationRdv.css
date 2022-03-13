@@ -1,0 +1,22 @@
+.programmationContainer{
+    width: 60vw;
+    height: 40vh;
+    background-color: seagreen;
+}
+
+.planningContainer{
+    width: 60vw;
+    height: 40vh;
+    background-color: aqua;
+
+    /* display: grid;
+    grid-template-columns: repeat(7,1fr); */
+}
+
+.dateComponentContainer{
+    width: 12.5%;
+    height: 100%;
+    background-color: bisque;
+    border-style: solid;
+    border-color:black;
+}

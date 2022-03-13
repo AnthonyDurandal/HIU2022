@@ -40,28 +40,35 @@
 
 .stat-1 {
     grid-column: span 20;
-    grid-row: span 2;
+    grid-row: span 3;
     background: rgb(100, 100, 100);
     margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stat-2 {
-    grid-column: span 13;
+    grid-column: span 14;
     grid-row: span 5;
     background: rgb(100, 100, 100);
     margin-right: 25px;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stat-3 {
-    grid-column: 14 / span 8;
+    grid-column: 15 / span 7;
     grid-row: span 5;
     background: rgb(100, 100, 100);
     margin-bottom: 25px;
 }
 
 .stat-4 {
-    grid-column: span 6;
+    grid-column: span 8;
     grid-row: span 5;
     background: rgb(100, 100, 100);
     margin-right: 25px;
@@ -69,7 +76,7 @@
 }
 
 .stat-5 {
-    grid-column: 7 / span 15;
+    grid-column: 9 / span 13;
     grid-row: span 5;
     background: rgb(100, 100, 100);
     margin-bottom: 25px;
@@ -81,6 +88,10 @@
     background: rgb(100, 100, 100);
     margin-right: 25px;
     margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stat-7 {

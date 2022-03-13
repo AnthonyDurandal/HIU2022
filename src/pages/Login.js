@@ -5,7 +5,6 @@ import Notification from "../components/notification/Notification"
 import ConfirmDialog from "../components/alert/ConfirmDialog"
 import {ThreeDots } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
-// import { useGlobalState } from 'state-pool';
 
 function Login(props){
     //Notif
@@ -29,21 +28,10 @@ function Login(props){
     }
 
     const doLogin = async() => {
-        //TEST/////////////// MIANDRY 2s AVANT LA REDIRECTION ******** MILA ESORINA 
-        setTimeout(function () {
-            setConfirmDialog({
-                isOpen: true,
-                title: 'Etes-vous sûr?',
-                subTitle: "Cette action est irréversible",
-                onConfirm: () => { navigate("/accueil") }
-            })
-                
-        }, 2000);
-        //////////////////////////////*********************////////////////////////
         setLoading(true)
         console.log(JSON.stringify({ username: email, password: mdp}));
         var apiLink =""
-        fetch(apiLink +'/api/v1/loginWeb', {
+        fetch(apiLink +'/api/v1/login', {
             method: 'POST',
             headers:{
                 'Accept': 'application/json',
