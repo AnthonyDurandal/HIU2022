@@ -2,6 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
 import './App.css'
+import Table from "./pages/Table";
+import './styles/App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* config */
 const herokuLink = "https://tatitra-rest-api.herokuapp.com";

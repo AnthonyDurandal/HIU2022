@@ -122,5 +122,10 @@
         "title": "Report Bug",
         "icon": "bi-bug",
         "path": "/report-bug"
+    },
+    {
+        "title": "Table",
+        "icon": "bi bi-table",
+        "path": "/Table"
     }
 ]
