@@ -1,0 +1,51 @@
+.questionaire {
+  display: grid;
+  width: 70%;
+  padding: 10px 20px;
+  grid-template-columns: 1fr 40px;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+.checkBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox" i] {
+    background: blue;
+    color: white;
+}
+/* .checkBoxContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} */
+.textQuestion {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.choix{
+    display: flex;
+    animation: rotateZ .5s 1 ease-in-out forwards;
+    width: 60%;
+}
+.show{
+    margin-left: 1em;
+}
+
+@keyframes rotateZ {
+  0% {
+    opacity: 0;
+    transform: translateZ(290px);
+  }
+
+  80% {
+    transform: translateZ(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
