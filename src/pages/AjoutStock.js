@@ -37,7 +37,7 @@ const AjoutStock = () => {
                     <div className='formulaire-ajout-stock'>
                         <div className='form'>
                             <div className='inputGroup'>
-                                <h1>Ajout stock vaccin</h1>
+                                <h1 className='titre'>Ajout stock vaccin</h1>
                             </div>
                             <div className='inputGroup'>
                                 <label className="inputLabel" htmlFor="quantite">Quantite</label>
