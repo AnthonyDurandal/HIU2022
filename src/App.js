@@ -3,7 +3,6 @@ import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
 import './App.css'
 import Table from "./pages/Table";
-import './styles/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* config */
