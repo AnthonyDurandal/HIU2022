@@ -86,11 +86,11 @@ function Login(props){
     }
 
     return (
-        <div className="container">
+        <div className="conteneur">
             <div className='Login'>
                 <div className="conteneur-logo">
                     <div className="logo">
-                        <img src="./img/big-loud-speaker.png" alt="logo" />
+                        <img src="./img/syringe.png" alt="logo" />
                     </div>
                 </div>
                 <div className="formulaire">

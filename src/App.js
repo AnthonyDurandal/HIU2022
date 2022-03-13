@@ -3,6 +3,8 @@ import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
 import './App.css'
 import Test from "./testing/Test";
+import Table from "./pages/Table";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* config */
 const herokuLink = "https://tatitra-rest-api.herokuapp.com";
