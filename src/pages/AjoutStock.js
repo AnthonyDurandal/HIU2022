@@ -11,6 +11,7 @@ const AjoutStock = () => {
     const [quantite, setQuantite] = useState(0);
     const [vaccin, setVaccin] = useState(-1);
     const [datePeremption, setDatePeremption] = useState();
+    const [dateArrive, setDateArrive] = useState();
     const handleSelectValueChange = (event)=>{
         setVaccin(event.target.value);
     }
@@ -52,6 +53,10 @@ const AjoutStock = () => {
                             <div className='inputGroup'>
                                 <label className="inputLabel" htmlFor="datePeremption">Date de peremption</label>
                                 <input value={datePeremption} type='date' id={"datePeremption"}  onChange={(event) => setDatePeremption(event.target.value)}></input>
+                            </div>
+                            <div className='inputGroup'>
+                                <label className="inputLabel" htmlFor="dateArrive">Date d'arrivé</label>
+                                <input value={dateArrive} type='date' id={"dateArrive"}  onChange={(event) => setDateArrive(event.target.value)}></input>
                             </div>
                             
                                 <Button className='button' variant="primary" onClick={()=> console.log("this button is clicked")}>Enregistrer</Button>
