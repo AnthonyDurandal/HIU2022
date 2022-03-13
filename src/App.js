@@ -1,9 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
+import Inscription from "./pages/Inscription";
 import './App.css'
 import Test from "./testing/Test";
 import Table from "./pages/Table";
+import ChoixCentre from "./pages/ChoixCentre";
+import ChoixVaccin from "./pages/ChoixVaccin";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 /* config */
@@ -23,6 +26,7 @@ function App() {
           <Route path="/Accueil" exact="true" element={<Accueil />} />
           <Route path="/about" exact="true" element={<Accueil />} />
           <Route path="/login" exact="true" element={<Login />} />
+          <Route path="/inscription" exact="true" element={<Inscription />} />
           <Route path="/register" exact="true" element={<Accueil />} />
           <Route path="/forgot-password" exact="true" element={<Accueil />} />
           <Route path="/reset-password" exact="true" element={<Accueil />} />
@@ -39,6 +43,8 @@ function App() {
           <Route path="/Table" exact="true" element={<Table />} />
           <Route path="/test" exact="true" element={<Test />} />
           <Route path="/" exact="true" element={<Accueil />} />
+          <Route path="/choixCentre" exact="true" element={<ChoixCentre />} />
+          <Route path="/ChoixVaccin" exact="true" element={<ChoixVaccin />} />
         </Routes>
       </BrowserRouter>
     </div>

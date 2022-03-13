@@ -1,0 +1,18 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.titre {
+    color: rgb(34, 140, 219);
+    font-weight: 500;
+    font-size: 2em;
+    padding: .3em;
+    /* padding-left: .6px !important; */
+}
+
+.liste {
+    background: rgb(236, 236, 236);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
