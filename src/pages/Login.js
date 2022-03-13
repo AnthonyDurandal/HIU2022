@@ -23,7 +23,6 @@ function Login(props){
     document.addEventListener('keydown', logKey);
 
     function logKey(e) {
-        // log.textContent += ` ${e.code}`;
         if(e.code === "Enter"){
             doLogin();
         }
@@ -61,9 +60,9 @@ function Login(props){
                     console.log('redirection to backOffice')
                     // window.location.replace("/accueil");
                 }
-                else if (user.role.id === 2)
+                else if (user.role.id === 3)
                 {console.log('redirection to frontOffice')
-                    // window.location.replace("/frontOffice");
+                    window.location.replace("/Sensibilisation");
                 }
             }else{
                 setLoginError("Login ou mots de passe incorrect.")
@@ -128,6 +127,13 @@ function Login(props){
                                         }} >se connecter</div>
                                     </td>
                                 </tr>    
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="/Inscription">S'inscrir</a>
+                                    </td>
+                                    </tr> 
+
                             </tbody>   
                         </table>
                     </form>

@@ -8,11 +8,11 @@ import CardVaccin from '../components/listeVaccin/CardVaccin';
 const ChoixVaccin = () => {
     const liste = [{ name: "AstraZeneca" }, { name: "AstraZeneca" }, { name: "AstraZeneca" }, { name: "AstraZeneca" }, { name: "AstraZeneca" }]
     return (
-        <div className='admin-dashboard'>
+        <div className='mainContainer'>
             <Sidebar data={clientsidebar} />
             <DashboardHeader /> {/* top bar */}
                
-            <div className='content'>
+            <div className='vaccinContent'>
             <div className='titre'>Liste des vaccin disponible</div>
               <div className="liste">
                     {liste.map(function (item, index) {
