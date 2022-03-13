@@ -1,0 +1,38 @@
+.element {
+    padding: .75em;
+    background-color: white;
+    width: 22em;
+    height: 20em;
+    border-radius: 4px;
+}
+
+.element .meta {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+.element .meta .title {
+    display: flex;
+}
+.element .meta .title .nom {
+    text-align: center;
+    /* border: 3px solid salmon; */
+    font-size: x-large;
+}
+.element .meta .title  img{
+    padding: .1em;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius:  50%;
+    
+}
+
+.element .meta .title .nom {
+    text-align: center;
+    padding: 3%;
+}
+
+.others{
+    margin-top: 1em;
+}
