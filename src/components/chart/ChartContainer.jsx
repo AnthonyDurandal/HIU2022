@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useGlobalState } from "state-pool";
-import { apiLink, chartCssDefaultPath } from "../../App";
+import {  chartCssDefaultPath } from "../../App";
+import { localLink } from "../../config/Config";
 import { createDataForChart, getChartData, transposeAnyData } from "./statFunctions";
 import '../../styles/chart/ChartCssDefault.css'
 
@@ -10,7 +11,7 @@ dataColumnName,LoadingComponent,ChartComponentWithoutData,transposeData,chartCss
 
     useEffect(() => {
         // dynamicCssCall(chartCssPath, chartCssDefaultPath)
-        linkToApi = apiLink+'/'+linkToApi
+        linkToApi = localLink+'/'+linkToApi
         getChartData('https://datausa.io/api/data?drilldowns=Nation&measures=Population', setData, chartLabel, labelsColumnName, dataColumnName, colorScale, transposeData)
     }, [])
 

@@ -10,13 +10,7 @@ import ChoixVaccin from "./pages/ChoixVaccin";
 import Planning from "./pages/Planning";
 import Sensibilisation from "./pages/Sensibilisation";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {herokuLink , localLink, fakeDataLink} from './config/Config';
-/* config */
-const onlineLink = herokuLink;
-const lienLocal = localLink;
-// const akeDataLink = fakeDataLink
 
-export const apiLink = fakeDataLink
 export const chartCssDefaultPath = '../../styles/chart/ChartCssDefault.css'
 /* config ends */
 
@@ -26,24 +20,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/Accueil" exact="true" element={<Accueil />} />
-          <Route path="/about" exact="true" element={<Accueil />} />
           <Route path="/login" exact="true" element={<Login />} />
           <Route path="/inscription" exact="true" element={<Inscription />} />
-          <Route path="/register" exact="true" element={<Accueil />} />
-          <Route path="/forgot-password" exact="true" element={<Accueil />} />
-          <Route path="/reset-password" exact="true" element={<Accueil />} />
-          <Route path="/profile" exact="true" element={<Accueil />} />
-          <Route path="/settings/account" exact="true" element={<Accueil />} />
-          <Route path="/settings/billing/payment" exact="true" element={<Accueil />} />
-          <Route path="/settings/billing/subscription" exact="true" element={<Accueil />} />
-          <Route path="/settings/notifications" exact="true" element={<Accueil />} />
+         
           <Route path="/logout" exact="true" element={<Accueil />} />
-          <Route path="/search" exact="true" element={<Accueil />} />
-          <Route path="/history" exact="true" element={<Accueil />} />
-          <Route path="/support" exact="true" element={<Accueil />} />
-          <Route path="/report-bug" exact="true" element={<Accueil />} />
-          <Route path="/Table" exact="true" element={<Table />} />
-          <Route path="/test" exact="true" element={<Test />} />
+        
           <Route path="/" exact="true" element={<Accueil />} />
           <Route path="/choixCentre" exact="true" element={<ChoixCentre />} />
           <Route path="/ChoixVaccin" exact="true" element={<ChoixVaccin />} />
