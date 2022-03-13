@@ -71,7 +71,7 @@ const Jour = ({ date, heureDeb, heureFin, reservation, changeValueDate, valueDat
                             </div>
                         ) : (
                             <div key = { index } 
-                                className={valueDate === date.format("DD-MM-YYYY") + " " + hj[0].format("HH:mm:ss") ? 'heureSelected' : 'heure'}
+                                className={valueDate === date.format("DD-MM-YYYY") + " " + hj[0].format("HH:mm:ss") ? 'heure selected' : 'heure'}
                                 onClick={() => {
                                     changeValueDate(date.format("DD-MM-YYYY") + " " + hj[0].format("HH:mm:ss"))
                                 }}
