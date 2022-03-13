@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Questionaire } from "../components/questionaire/questionaire";
 import Sidebar from "../components/sidebar/Sidebar";
 import DashboardHeader from "../components/header/DashboardHeader";
-import { Modal, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import clientsidebar from './../data/clientSidebar.json'
 // import './../styles/AdminDashboard.css'
 import "./../styles/TestAptitude.css";
 export const TestAptitude = () => {
   const questionTestPcr =
-    "Avez-vous eu un test (PCR ou antigénique) positif au cours des 3 derniers mois";
+    "Avez-vous eu un test (PCR ou antigénique) positif au cours des 3 derniers mois ?";
   const [testPcr, setTestPcr] = useState();
 
   const questionVaccinRencent =
@@ -16,7 +17,7 @@ export const TestAptitude = () => {
   const [vaccinRecent, setVaccinRecent] = useState();
 
   const questionAllergie =
-    "Avez-vois des actécédents d'allergie ou d'hypersensibitlité à centaines substances ou avec d' autres vaccins";
+    "Avez-vous des actécédents d'allergie ou d'hypersensibitlité à centaines substances ou avec d' autres vaccins ?";
   const [allergie, setAllergie] = useState();
   const questionMedicament =
     "Avez-vous été traité par un medicament anticoagulant ?";
@@ -29,7 +30,7 @@ export const TestAptitude = () => {
   const [allaitement, setAllaitement] = useState();
   return (
     <div className="admin-dashboard">
-      <Sidebar />
+      <Sidebar data={clientsidebar}/>
       <DashboardHeader />
       <div className="content">
         <div className="formContainer">

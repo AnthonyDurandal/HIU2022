@@ -92,6 +92,10 @@
         "title": "Logout",
         "path": "/logout",
         "icon": "bi bi-box-arrow-right"
+    },
+    {
+        "title": "TestAptitude",
+        "icon": "bi-house-fill",
+        "path": "/TestAptitude"
     }
-   
 ]
