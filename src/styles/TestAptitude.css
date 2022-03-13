@@ -1,13 +1,11 @@
 .listeQuestionaire {
     background-color: aliceblue;
     color: rgba(0, 0, 0, 0.8);
-    /* border: 2px solid sandybrown; */
     width: 98%;
     margin: .3em;
     padding: .7em;
-    /* height: 100vh; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
+    border-radius: 5px ;
+   
 }
 
 .listeQuestionaire .titre{
