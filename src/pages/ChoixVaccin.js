@@ -18,8 +18,8 @@ const ChoixVaccin = () => {
                     {liste.map(function (item, index) {
                         return (
                             <CardVaccin data={item} />
-                        )
-                    })}
+                            )
+                        })}
               </div>
             </div>
         </div>
