@@ -8,7 +8,7 @@ export const TestAptitude = () => {
 
   const questionVaccinRencent =
     "Avez-vous reçu un vaccin au cours des deux dernières semaines ?";
-    const listeChoix = ['vaccin1', 'vaccin2', 'vaccin3'];
+  const listeChoix = ["vaccin1", "vaccin2", "vaccin3"];
   const [vaccinRecent, setVaccinRecent] = useState();
 
   const questionAllergie =

@@ -5,7 +5,9 @@ import "./App.css";
 import Test from "./testing/Test";
 import Table from "./pages/Table";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { TestAptitude } from "./pages/TestAptitude";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
+import AjoutStock from "./pages/AjoutStock";
 /* config */
 const onlineLink = herokuLink;
 const lienLocal = localLink;
@@ -20,6 +22,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/AjoutStock" exact="true" element={<AjoutStock />}/>
           <Route path="/TestAptitude" exact="true" element={<TestAptitude />} />
           <Route path="/Accueil" exact="true" element={<Accueil />} />
           <Route path="/about" exact="true" element={<Accueil />} />
