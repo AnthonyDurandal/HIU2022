@@ -37,6 +37,7 @@ function App() {
           <Route path="/history" exact="true" element={<Accueil />} />
           <Route path="/support" exact="true" element={<Accueil />} />
           <Route path="/report-bug" exact="true" element={<Accueil />} />
+          <Route path="/Table" exact="true" element={<Table />} />
           <Route path="/" exact="true" element={<Accueil />} />
         </Routes>
       </BrowserRouter>
