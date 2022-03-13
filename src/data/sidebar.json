@@ -4,6 +4,11 @@
         "icon": "bi-gear-fill",
         "childrens": [
             {
+                "title": "TestAptitude",
+                "icon": "bi-house-fill",
+                "path": "/TestAptitude"
+            },
+            {
                 "title": "Home",
                 "icon": "bi-house-fill",
                 "path": "/"
