@@ -1,18 +1,30 @@
-.content {
+.mainContainer {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 56px 1fr;
+    height: 100vh;
+    color: white;
+}
+
+.centreContent {
     /* margin-top: 5px; */
     /* border: 2px solid black; */
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
 }
-.liste {
-    overflow-y: auto;
+
+.listeCentre {
+    overflow: auto;
     /* box-shadow: ; */
     border-radius: 5px;
-    margin:.501em .50em;
+    margin: .5em .5em;
     /* border: 2px solid black; */
     width: 98%;
     background-color: white;
+    display: flex;
+    flex-direction: column; 
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .map {

@@ -5,8 +5,10 @@ import Notification from "../components/notification/Notification"
 import ConfirmDialog from "../components/alert/ConfirmDialog"
 import {ThreeDots } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
+import { localLink } from '../config/Config';
 
 function Login(props){
+    const apiLink = localLink;
     //Notif
     const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
     //Alert
@@ -21,7 +23,6 @@ function Login(props){
     document.addEventListener('keydown', logKey);
 
     function logKey(e) {
-        // log.textContent += ` ${e.code}`;
         if(e.code === "Enter"){
             doLogin();
         }
@@ -30,8 +31,9 @@ function Login(props){
     const doLogin = async() => {
         setLoading(true)
         console.log(JSON.stringify({ username: email, password: mdp}));
-        var apiLink =""
-        fetch(apiLink +'/api/v1/login', {
+        // var apiLink =""
+        console.log(apiLink + '/Login');
+        fetch(apiLink +'/Login', {
             method: 'POST',
             headers:{
                 'Accept': 'application/json',
@@ -56,11 +58,11 @@ function Login(props){
                 if(user.role.id === 1)
                 {
                     console.log('redirection to backOffice')
-                    window.location.replace("/accueil");
+                    // window.location.replace("/accueil");
                 }
-                else if (user.role.id === 2)
+                else if (user.role.id === 3)
                 {console.log('redirection to frontOffice')
-                    window.location.replace("/frontOffice");
+                    window.location.replace("/Sensibilisation");
                 }
             }else{
                 setLoginError("Login ou mots de passe incorrect.")
@@ -125,6 +127,13 @@ function Login(props){
                                         }} >se connecter</div>
                                     </td>
                                 </tr>    
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="/Inscription">S'inscrir</a>
+                                    </td>
+                                    </tr> 
+
                             </tbody>   
                         </table>
                     </form>

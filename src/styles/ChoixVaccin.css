@@ -1,6 +1,14 @@
-.content {
+.mainContainer {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 56px 1fr;
+    height: 100vh;
+    color: white;
+}
+
+.vaccinContent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
 }
 
 .titre {

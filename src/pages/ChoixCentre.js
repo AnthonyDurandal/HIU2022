@@ -10,11 +10,11 @@ import CentreElement from '../components/choixCentre/CentreElement';
 const ChoixCentre = () => {
     const liste = [{ name: "nom" }, { name: "nom"}]
     return (
-        <div className='admin-dashboard'>
+        <div className='mainContainer'>
             <Sidebar data={clientsidebar} />
             <DashboardHeader /> {/* top bar */}
-            <div className='content'>
-               <div className='liste'>
+            <div className='centreContent'>
+               <div className='listeCentre'>
                    {
                        liste.map(function(item, index){
                            return(

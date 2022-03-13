@@ -7,7 +7,7 @@ const CardVaccin = (props) => {
         setModalOption({ ...modalOption, show: false })
     }
     return (
-        <div className='element'>
+        <div className='cardVaccin'>
             <div className="meta">
                 <div className="title">
                     <img src="./img/vaccination.png" alt="" width="60" height="60"></img>
@@ -19,7 +19,6 @@ const CardVaccin = (props) => {
                     <Button variant="success">Choisir</Button>
                 </div>
             </div>
-            {/* <PlanningModal option={modalOption} closeFunction={closeModal} /> */}
         </div>
     );
 };
