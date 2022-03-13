@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import './App.css'
 import Test from "./testing/Test";
 import Table from "./pages/Table";
+import Planning from "./pages/Planning";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 /* config */
@@ -38,6 +39,7 @@ function App() {
           <Route path="/report-bug" exact="true" element={<Accueil />} />
           <Route path="/Table" exact="true" element={<Table />} />
           <Route path="/test" exact="true" element={<Test />} />
+          <Route path="/Planning" exact="true" element={<Planning />} />
           <Route path="/" exact="true" element={<Accueil />} />
         </Routes>
       </BrowserRouter>
