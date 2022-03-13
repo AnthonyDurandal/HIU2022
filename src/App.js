@@ -7,6 +7,7 @@ import Test from "./testing/Test";
 import Table from "./pages/Table";
 import ChoixCentre from "./pages/ChoixCentre";
 import ChoixVaccin from "./pages/ChoixVaccin";
+import Planning from "./pages/Planning";
 import Sensibilisation from "./pages/Sensibilisation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" exact="true" element={<Accueil />} />
           <Route path="/choixCentre" exact="true" element={<ChoixCentre />} />
           <Route path="/ChoixVaccin" exact="true" element={<ChoixVaccin />} />
+          <Route path="/Planning" exact="true" element={<Planning />} />
           <Route path="/Sensibilisation" exact="true" element={<Sensibilisation />} />
         </Routes>
       </BrowserRouter>
