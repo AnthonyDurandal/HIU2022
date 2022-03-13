@@ -5,14 +5,12 @@ import './App.css'
 import Test from "./testing/Test";
 import Table from "./pages/Table";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {herokuLink , localLink, fakeDataLink} from './config/Config';
 /* config */
-const herokuLink = "https://tatitra-rest-api.herokuapp.com";
-const localLink = "http://localhost:8087";
-const fakeDataLink = "https://datausa.io"
+const onlineLink = herokuLink;
+const lienLocal = localLink;
+// const akeDataLink = fakeDataLink
 
-// const store = Store()
-// store.setState("apiLink", fakeDataLink);
 export const apiLink = fakeDataLink
 export const chartCssDefaultPath = '../../styles/chart/ChartCssDefault.css'
 /* config ends */
