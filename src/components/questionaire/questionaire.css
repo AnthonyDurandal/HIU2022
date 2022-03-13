@@ -22,11 +22,11 @@
 }
 .choix{
     display: flex;
+    animation: rotateZ 1s 1 ease-in-out forwards;
+    width: 60%;
 }
 .show{
     margin-left: 1em;
-    width: 60%;
-    animation: rotateZ 1s 1 ease-in-out forwards;
 }
 
 @keyframes rotateZ {

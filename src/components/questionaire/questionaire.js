@@ -10,7 +10,7 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
           return <option>{opt}</option>;
         });
         return (
-          <div className="choix">
+          <div className="choix show">
             Lequels ?
             <select className="show">
               {options.map((oneOption) => oneOption)}
