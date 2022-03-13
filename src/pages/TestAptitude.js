@@ -51,6 +51,7 @@ export const TestAptitude = () => {
               question={questionAllergie}
               setState={setAllergie}
               checked={allergie}
+              choix={listeChoix}
             ></Questionaire>
             <Questionaire
               question={questionMedicament}
