@@ -6,7 +6,7 @@
 }
 .dataContainer {
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 60px auto;
   width: 100%;
 }
 .table {
@@ -14,7 +14,9 @@
 }
 
 .title{
-    text-align: center;
+    text-align: left;
+    margin-left: 2%;
+    color: rgb(34,140,219);
 }
 .actionCol{
     display: flex;
