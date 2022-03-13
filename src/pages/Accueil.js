@@ -3,10 +3,12 @@ import Sidebar from '../components/sidebar/Sidebar';
 import DashboardHeader from '../components/header/DashboardHeader';
 import './../styles/AdminDashboard.css'
 
+import items from './../data/sidebar.json'
+import clientsidebar from './../data/clientSidebar.json'
 const Accueil = () => {
     return (
         <div className='admin-dashboard'>
-            <Sidebar />
+            <Sidebar data={clientsidebar}/>
             <DashboardHeader />
             <div className='content'>
                 <div className='stat-content'>

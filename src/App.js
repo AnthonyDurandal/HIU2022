@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Login from "./pages/Login";
+import Inscription from "./pages/Inscription";
 import './App.css'
 import Test from "./testing/Test";
 import Table from "./pages/Table";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Accueil" exact="true" element={<Accueil />} />
           <Route path="/about" exact="true" element={<Accueil />} />
           <Route path="/login" exact="true" element={<Login />} />
+          <Route path="/inscription" exact="true" element={<Inscription />} />
           <Route path="/register" exact="true" element={<Accueil />} />
           <Route path="/forgot-password" exact="true" element={<Accueil />} />
           <Route path="/reset-password" exact="true" element={<Accueil />} />
