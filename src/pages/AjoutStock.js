@@ -14,7 +14,7 @@ const AjoutStock = () => {
     const handleSelectValueChange = (event)=>{
         setVaccin(event.target.value);
     }
-    
+
     const ajoutStock= () =>{
         fetchData({
             restUrl: '/api/vaccins',
@@ -54,7 +54,7 @@ const AjoutStock = () => {
                                 <input value={datePeremption} type='date' id={"datePeremption"}  onChange={(event) => setDatePeremption(event.target.value)}></input>
                             </div>
                             
-                                <Button className='button' variant="primary" onClick={()=> console.log("this button is clicked")}>Primary</Button>
+                                <Button className='button' variant="primary" onClick={()=> console.log("this button is clicked")}>Enregistrer</Button>
                             
                         </div>
                     </div>
