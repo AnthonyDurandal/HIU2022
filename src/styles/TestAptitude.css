@@ -2,10 +2,19 @@
     background-color: aliceblue;
     color: rgba(0, 0, 0, 0.8);
     width: 98%;
-    margin: .3em;
-    padding: .7em;
-    border-radius: 5px ;
-   
+    margin-top: 3em;
+    padding: 3em;
+    border-radius: 5px;
+}
+.actionContainer{
+    display: flex;
+    margin-top: 1em;
+    justify-content: right;
+    margin-right: 1em;
+}
+
+.validationBut{
+    width: 20%;
 }
 
 .listeQuestionaire .titre{
