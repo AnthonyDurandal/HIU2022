@@ -5,8 +5,10 @@ import Notification from "../components/notification/Notification"
 import ConfirmDialog from "../components/alert/ConfirmDialog"
 import {ThreeDots } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
+import { localLink } from '../config/Config';
 
 function Login(props){
+    const apiLink = localLink;
     //Notif
     const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
     //Alert
@@ -30,8 +32,9 @@ function Login(props){
     const doLogin = async() => {
         setLoading(true)
         console.log(JSON.stringify({ username: email, password: mdp}));
-        var apiLink =""
-        fetch(apiLink +'/api/v1/login', {
+        // var apiLink =""
+        console.log(apiLink + '/Login');
+        fetch(apiLink +'/Login', {
             method: 'POST',
             headers:{
                 'Accept': 'application/json',
@@ -56,11 +59,11 @@ function Login(props){
                 if(user.role.id === 1)
                 {
                     console.log('redirection to backOffice')
-                    window.location.replace("/accueil");
+                    // window.location.replace("/accueil");
                 }
                 else if (user.role.id === 2)
                 {console.log('redirection to frontOffice')
-                    window.location.replace("/frontOffice");
+                    // window.location.replace("/frontOffice");
                 }
             }else{
                 setLoginError("Login ou mots de passe incorrect.")
