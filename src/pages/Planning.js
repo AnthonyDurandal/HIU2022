@@ -42,7 +42,8 @@ const Planning = () => {
                         heureDeb={heureDeb}
                         heureFin={heureFin}
                         reservation={reservation}
-                        valueDate={changeValueDate}/>)
+                        changeValueDate={changeValueDate}
+                        valueDate={valueDate}/>)
                 )
             }
         </div>

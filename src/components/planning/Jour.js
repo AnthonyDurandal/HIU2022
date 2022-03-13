@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../../styles/Planning.css"
 
-const Jour = ({date, heureDeb, heureFin, reservation, valueDate}) => {
+const Jour = ({ date, heureDeb, heureFin, reservation, changeValueDate, valueDate}) => {
     const moment = require("moment");
     const [dayName, setDayName] = useState(['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'])
     const [heureJour, setHeureJour] = useState([])
@@ -71,9 +71,9 @@ const Jour = ({date, heureDeb, heureFin, reservation, valueDate}) => {
                             </div>
                         ) : (
                             <div key = { index } 
-                                className = 'heure' 
+                                className={valueDate === date.format("DD-MM-YYYY") + " " + hj[0].format("HH:mm:ss") ? 'heureSelected' : 'heure'}
                                 onClick={() => {
-                                    valueDate(date.format("DD-MM-YYYY") + " " + hj[0].format("HH:mm:ss"))
+                                    changeValueDate(date.format("DD-MM-YYYY") + " " + hj[0].format("HH:mm:ss"))
                                 }}
                             >
                                 {hj[0].format("HH:mm")}
