@@ -1,0 +1,47 @@
+{
+    "labels": ["Janvier","Février","Mars","Avril","Mai","Juin"],
+    "datasets": 
+    [
+        {
+            "label": "Astrazeneca",
+            "data": [
+                        400,
+                        388,
+                        220,
+                        120,
+                        34,
+                        20
+                    ],
+            "borderWidth": 1,
+            "fill": false,
+            "borderColor": "red"
+        },
+        {
+            "label": "Jansen",
+            "data": [
+                        1000,
+                        800,
+                        500,
+                        400,
+                        230,
+                        12
+                    ],
+            "borderWidth": 1,
+            "fill": false,
+            "borderColor": "green"
+        },{
+            "label": "Cinopharm",
+            "data": [
+                        400,
+                        380,
+                        370,
+                        320,
+                        120,
+                        44
+                    ],
+            "borderWidth": 1,
+            "fill": false,
+            "borderColor": "yellow"
+        }
+    ]
+}

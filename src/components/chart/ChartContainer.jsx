@@ -6,13 +6,15 @@ import { createDataForChart, getChartData, transposeAnyData } from "./statFuncti
 import '../../styles/chart/ChartCssDefault.css'
 
 export default function ChartContainer({ linkToApi, chartLabel, colorScale, /* colorRangeInfo, */labelsColumnName,
-dataColumnName,LoadingComponent,ChartComponentWithoutData,transposeData,chartCssPath,chartClassName}){
+dataColumnName,LoadingComponent,ChartComponentWithoutData,transposeData,chartCssPath,chartClassName,dateAjout,chartData
+}){
     const [data, setData] = useState(null)
 
     useEffect(() => {
         // dynamicCssCall(chartCssPath, chartCssDefaultPath)
         linkToApi = localLink+'/'+linkToApi
-        getChartData('https://datausa.io/api/data?drilldowns=Nation&measures=Population', setData, chartLabel, labelsColumnName, dataColumnName, colorScale, transposeData)
+        //getChartData('https://datausa.io/api/data?drilldowns=Nation&measures=Population', setData, chartLabel, labelsColumnName, dataColumnName, colorScale, transposeData)
+        setData(chartData)
     }, [])
 
     function dynamicCssCall(firstCssOptionPath, defaultCssOptionPath) {

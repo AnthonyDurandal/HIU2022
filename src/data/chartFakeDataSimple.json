@@ -1,0 +1,20 @@
+{
+    "labels": [
+        "AstraZeneca ",
+        "Pfizer",
+        "Sinovac"
+    ],
+    "datasets": [
+        {
+            "label": "Nombre de vaccinations par vaccin",
+            "data": [
+                1800,
+                1200,
+                900
+            ],
+            "borderWidth": 1,
+            "fill": false,
+            "borderColor": "red"
+        }
+    ]
+}
