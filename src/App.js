@@ -15,6 +15,8 @@ import  TimeTable  from "./pages/TimeTable";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 import AjoutStock from "./pages/AjoutStock";
 import HistoriqueVaccin from "./pages/HistoriqueVaccin";
+import { PointageRDV } from "./pages/PointageRDV";
+import { AccueilUser } from "./pages/AcceuilUser";
 /* config */
 const onlineLink = herokuLink;
 const lienLocal = localLink;
@@ -28,6 +30,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/Pointage" exact="true" element={<PointageRDV />} />
           <Route path="/HistoriqueVaccin" exact="true" element={<HistoriqueVaccin />}/>
           <Route path="/AjoutStock" exact="true" element={<AjoutStock />}/>
           <Route path="/TestAptitude" exact="true" element={<TestAptitude />} />
@@ -36,6 +39,7 @@ function App() {
           <Route path="/login" exact="true" element={<Login />} />
           <Route path="/inscription" exact="true" element={<Inscription />} />
           <Route path="/TimeTable" exact="true" element={<TimeTable />} />
+          <Route path="/" exact="true" element={<AccueilUser />} />
          
           <Route path="/centre/accueil" exact="true" element={<Accueil />} />
           <Route path="/centre/ajoutStock" exact="true" element={<Accueil />} />
@@ -46,7 +50,7 @@ function App() {
           <Route path="/Historique" exact="true" element={<HistoriqueVaccin />} />
         
           <Route path="/" exact="true" element={<Accueil />} />
-          <Route path="/choixCentre" exact="true" element={<ChoixCentre />} />
+          <Route path="/choixCentre/:id" exact="true" element={<ChoixCentre />} />
           <Route path="/ChoixVaccin" exact="true" element={<ChoixVaccin />} />
           <Route path="/Planning" exact="true" element={<Planning />} />
           <Route path="/Table" exact="true" element={<Table />} />

@@ -1,104 +1,33 @@
 [
-    {
-        "title": "Profile",
-        "icon": "bi-person-fill",
-        "childrens": [
-            {
-                "title": "Profile",
-                "path": "/profile"
-            },{
-                "title":"Historique de vaccination",
-                "path":"/Historique"
-            },
-            {
-                "title": "Settings",
-                "childrens": [
-                    {
-                        "title": "Account",
-                        "path": "/settings/account"
-                    },
-                    {
-                        "title": "Billing",
-                        "childrens": [
-                            {
-                                "title": "Payment",
-                                "path": "/settings/billing/payment"
-                            },
-                            {
-                                "title": "Subscription",
-                                "path": "/settings/billing/subscription"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Notifications",
-                        "path": "/settings/notifications"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title":"Se faire vacciner",
-        "icon":"bi bi-calendar2-plus",
-        "path":"/"
-    },
-    {
-        "title": "General",
-        "icon": "bi-gear-fill",
-        "childrens": [
-            {
-                "title": "Home",
-                "icon": "bi-house-fill",
-                "path": "/"
-            },
-            {
-                "title": "About",
-                "icon": "bi-info-circle-fill",
-                "path": "/about"
-            },
-            {
-                "title": "Contact",
-                "icon": "bi-phone-fill",
-                "childrens": [
-                    {
-                        "title": "Facebook",
-                        "icon": "bi-facebook"
-                    },
-                    {
-                        "title": "Twitter",
-                        "icon": "bi-twitter"
-                    },
-                    {
-                        "title": "Instagram",
-                        "icon": "bi-instagram"
-                    }
-                ]
-            },
-            {
-                "title": "FAQ",
-                "icon": "bi-question-circle-fill"
-            },
-            {
-                "title": "Support",
-                "icon": "bi-question-circle-fill",
-                "path": "/support"
-            },
-            {
-                "title": "Report Bug",
-                "icon": "bi-bug",
-                "path": "/report-bug"
-            }
-        ]
-    },
-    {
-        "title": "Logout",
-        "path": "/logout",
-        "icon": "bi bi-box-arrow-right"
-    },
-    {
-        "title": "TestAptitude",
+  {
+    "title": "Profile",
+    "icon": "bi-person-fill",
+    "childrens": [
+      {
+        "title": "Historique de vaccination",
+        "path": "/Historique"
+      }
+    ]
+  },
+  {
+    "title": "Se faire vacciner",
+    "icon": "bi bi-calendar2-plus",
+    "path": "/TestAptitude"
+  },
+  {
+    "title": "General",
+    "icon": "bi-gear-fill",
+    "childrens": [
+      {
+        "title": "Home",
         "icon": "bi-house-fill",
-        "path": "/TestAptitude"
-    }
+        "path": "/"
+      }
+    ]
+  },
+  {
+    "title": "Logout",
+    "path": "/logout",
+    "icon": "bi bi-box-arrow-right"
+  }
 ]

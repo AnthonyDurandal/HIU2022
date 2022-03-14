@@ -8,5 +8,10 @@
         "title": "Se deconnecter",
         "icon": "bi bi-door-closed-fill",
         "path": "/Login"
+    },
+    {
+        "title": "Pointage Rendez-vous",
+        "icon": "bi bi-door-closed-fill",
+        "path": "/Pointage"
     }
 ]
