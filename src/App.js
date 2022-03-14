@@ -9,12 +9,11 @@ import ChoixCentre from "./pages/ChoixCentre";
 import ChoixVaccin from "./pages/ChoixVaccin";
 import Planning from "./pages/Planning";
 import Sensibilisation from "./pages/Sensibilisation";
-import TestAptitude from "./pages/TestAptitude";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TestAptitude } from "./pages/TestAptitude";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 import AjoutStock from "./pages/AjoutStock";
 import HistoriqueVaccin from "./pages/HistoriqueVaccin";
+import TestAptitude from './pages/TestAptitude'
 /* config */
 const onlineLink = herokuLink;
 const lienLocal = localLink;
