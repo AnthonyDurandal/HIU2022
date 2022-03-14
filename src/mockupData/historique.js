@@ -24,3 +24,36 @@ export const listeRappel = [
         vaccin: 'Jansen'
     },
 ];
+
+export const listeRendezVous = [
+    {
+        patient: "Joy",
+        heure: "9:00",
+        vaccin: "Jansen"
+    },
+    {
+        patient: "Durandal",
+        heure: "9:45",
+        vaccin: "AstraZeneca"
+    },
+    {
+        patient: "Manitra",
+        heure: "10:20",
+        vaccin: "Covi-shield"
+    },
+    {
+        patient: "Joy",
+        heure: "14:00",
+        vaccin: "Jansen"
+    },
+    {
+        patient: "Durandal",
+        heure: "14:45",
+        vaccin: "AstraZeneca"
+    },
+    {
+        patient: "Manitra",
+        heure: "15:20",
+        vaccin: "Covi-shield"
+    },
+];
