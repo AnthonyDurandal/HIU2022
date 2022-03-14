@@ -18,7 +18,7 @@ const PlanningModal = (props)=>{
                 <Planning></Planning>
         {/* </Modal.Body> */}
             <Modal.Footer>
-            <Button variant="primary"  onClick={props.closeFunction}>Valider</Button>
+            <Button variant="primary"  onClick={props.valideFunction}>Valider</Button>
             <Button variant="danger"  onClick={props.closeFunction}>Fermer</Button>
         </Modal.Footer>
       </Modal>

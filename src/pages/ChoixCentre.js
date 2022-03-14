@@ -4,7 +4,6 @@ import DashboardHeader from '../components/header/DashboardHeader';
 import Carte from '../components/carte/Carte';
 import './../styles/ChoixCentre.css'
 
-import items from './../data/sidebar.json'
 import clientsidebar from './../data/clientSidebar.json'
 import CentreElement from '../components/choixCentre/CentreElement';
 const ChoixCentre = () => {

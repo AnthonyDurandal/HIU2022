@@ -18,6 +18,7 @@
 
 .content-child {
     width: 1100px;
+    height: fit-contentw;
     border-radius: 3px;
     background: white;
     margin-top: 50px;

@@ -16,7 +16,7 @@ const CardVaccin = (props) => {
                 <div className="others">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
                     <Button variant="outline-info">Voir info</Button><br></br><br></br>
-                    <Button variant="success">Choisir</Button>
+                    <Button variant="success" onClick={e=>{window.location.replace("/ChoixCentre")}}>Choisir</Button>
                 </div>
             </div>
         </div>

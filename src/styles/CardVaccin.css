@@ -1,10 +1,12 @@
 .cardVaccin {
     padding: .75em;
     background-color: white;
-    width: 22em;
-    height: 20em;
+    width: 20em;
+    height: 21em;
     border-radius: 4px;
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     /* color: rgba(0, 0, 0, 0.7) !important; */
 }
 

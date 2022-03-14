@@ -130,7 +130,7 @@ function Login(props){
                                 <tr>
                                     <td></td>
                                     <td>
-                                        <a href="/Inscription">S'inscrir</a>
+                                        <a href="/Inscription">S'inscrire</a>
                                     </td>
                                     </tr> 
 

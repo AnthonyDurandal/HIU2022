@@ -8,6 +8,11 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.app-logo .logo-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .app-logo {
     padding: .75em 1em;
     display: flex;
@@ -15,10 +20,11 @@
     height: 56px;
 }
 
-.app-logo img{
+.app-logo img {
     /* border:1px solid black */
 }
-.app-logo .logo-text{
+
+.app-logo .logo-text {
     /* border: 2px solid black; */
     padding: 10px 5px;
     display: flex;

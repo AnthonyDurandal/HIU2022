@@ -3,7 +3,7 @@ import Sidebar from '../components/sidebar/Sidebar';
 import DashboardHeader from '../components/header/DashboardHeader';
 import TableT from '../components/table/TableT';
 import './../styles/AdminDashboard.css'
-
+import clientsidebar from './../data/clientSidebar.json'
 const Table = () => {
 
     const tableData = {
@@ -32,7 +32,7 @@ const Table = () => {
 
     return (
         <div className='admin-dashboard'>
-            <Sidebar />
+            <Sidebar data={clientsidebar} />
             <DashboardHeader />
             <div className='content'>
                 <div className='content-child'>

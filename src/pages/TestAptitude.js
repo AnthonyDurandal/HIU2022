@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import clientsidebar from './../data/clientSidebar.json'
 // import './../styles/AdminDashboard.css'
 import "./../styles/TestAptitude.css";
-export const TestAptitude = () => {
+ const TestAptitude = () => {
   const questionTestPcr =
     "Avez-vous eu un test (PCR ou antigénique) positif au cours des 3 derniers mois ?";
   const [testPcr, setTestPcr] = useState();
@@ -75,10 +75,12 @@ export const TestAptitude = () => {
             ></Questionaire>
           </div>
           <div className="actionContainer">
-            <Button variant="success" className="validationBut">Valider</Button>
+            <Button variant="success" className="validationBut" onClick={e =>{window.location.replace("/ChoixVaccin")}}>Valider</Button>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+export default TestAptitude;

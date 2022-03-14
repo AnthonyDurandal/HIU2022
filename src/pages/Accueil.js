@@ -7,12 +7,11 @@ import ChartContainer from '../components/chart/ChartContainer';
 import { TailSpin, ThreeDots } from 'react-loader-spinner';
 import { Bar, Doughnut, Line } from 'react-chartjs-2';
 
-import items from './../data/sidebar.json'
-import clientsidebar from './../data/clientSidebar.json'
+import items from './../data/centreSidebar.json'
 const Accueil = () => {
     return (
         <div className='admin-dashboard'>
-            <Sidebar data={clientsidebar}/>
+            <Sidebar data={items}/>
             <DashboardHeader />
             <div className='content'>
                 <div className='stat-content'>

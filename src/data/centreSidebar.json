@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Ajout de stock de vaccin",
+        "icon": "bi-question-circle-fill",
+        "path": "/"
+    },
+    {
+        "title": "Se deconnecter",
+        "icon": "bi bi-door-closed-fill",
+        "path": "/Login"
+    }
+]
