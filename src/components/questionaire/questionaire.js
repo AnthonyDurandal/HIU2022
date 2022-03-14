@@ -1,12 +1,7 @@
 import Select from "react-select";
 import "./questionaire.css";
 
-export const Questionaire = ({ question, setState, checked, choix }) => {
-  const aaaa = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
-  ]
+export const Questionaire = ({ question, setState, checked, choix , placeholder}) => {
 
   const listeChoix = () => {
     let options = [];
@@ -24,7 +19,7 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
             </select> */}
             <Select
               isMulti
-              options={aaaa}
+                options={choix}
               onChange={(e) => {
                 if (e.length == 0){
 
@@ -39,7 +34,7 @@ export const Questionaire = ({ question, setState, checked, choix }) => {
               }}
               on
               className='choixVaccin'
-              placeholder={<div>Nom du vaccin </div>}
+              placeholder={<div> {placeholder} </div>}
             />
             </p> 
           </div>
