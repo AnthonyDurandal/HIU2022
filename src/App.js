@@ -9,7 +9,6 @@ import ChoixCentre from "./pages/ChoixCentre";
 import ChoixVaccin from "./pages/ChoixVaccin";
 import Planning from "./pages/Planning";
 import Sensibilisation from "./pages/Sensibilisation";
-import TestAptitude from "./pages/TestAptitude";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TestAptitude } from "./pages/TestAptitude";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
@@ -42,6 +41,7 @@ function App() {
           
           <Route path="/logout" exact="true" element={<Accueil />} />
           <Route path="/TestAptitude" exact="true" element={<TestAptitude />} />
+          <Route path="/Historique" exact="true" element={<HistoriqueVaccin />} />
         
           <Route path="/" exact="true" element={<Accueil />} />
           <Route path="/choixCentre" exact="true" element={<ChoixCentre />} />

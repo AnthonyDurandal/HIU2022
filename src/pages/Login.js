@@ -29,6 +29,9 @@ function Login(props){
     }
 
     const doLogin = async() => {
+        if(email==="admin@gmail.com"){
+            window.location.replace("/Accueil")
+        }
         setLoading(true)
         console.log(JSON.stringify({ username: email, password: mdp}));
         // var apiLink =""

@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import clientsidebar from './../data/clientSidebar.json'
 // import './../styles/AdminDashboard.css'
 import "./../styles/TestAptitude.css";
- const TestAptitude = () => {
+ export const TestAptitude = () => {
   const questionTestPcr =
     "Avez-vous eu un test (PCR ou antigénique) positif au cours des 3 derniers mois ?";
   const [testPcr, setTestPcr] = useState();
@@ -83,4 +83,3 @@ import "./../styles/TestAptitude.css";
   );
 };
 
-export default TestAptitude;
