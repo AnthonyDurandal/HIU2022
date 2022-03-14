@@ -11,6 +11,14 @@ import Planning from "./pages/Planning";
 import Sensibilisation from "./pages/Sensibilisation";
 import TestAptitude from "./pages/TestAptitude";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { TestAptitude } from "./pages/TestAptitude";
+import {herokuLink , localLink, fakeDataLink} from './config/Config';
+import AjoutStock from "./pages/AjoutStock";
+import HistoriqueVaccin from "./pages/HistoriqueVaccin";
+/* config */
+const onlineLink = herokuLink;
+const lienLocal = localLink;
+// const akeDataLink = fakeDataLink
 
 export const chartCssDefaultPath = '../../styles/chart/ChartCssDefault.css'
 /* config ends */
@@ -20,6 +28,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/HistoriqueVaccin" exact="true" element={<HistoriqueVaccin />}/>
+          <Route path="/AjoutStock" exact="true" element={<AjoutStock />}/>
+          <Route path="/TestAptitude" exact="true" element={<TestAptitude />} />
+          <Route path="/Accueil" exact="true" element={<Accueil />} />
+          <Route path="/about" exact="true" element={<Accueil />} />
           <Route path="/login" exact="true" element={<Login />} />
           <Route path="/inscription" exact="true" element={<Inscription />} />
          

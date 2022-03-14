@@ -1,0 +1,26 @@
+.historique-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.dataContainer {
+  display: grid;
+  grid-template-rows: 60px auto;
+  width: 100%;
+}
+.table {
+  width: 100%;
+}
+
+.title{
+    text-align: left;
+    margin-left: 2%;
+    color: rgb(34,140,219);
+}
+.actionCol{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
