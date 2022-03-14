@@ -6,6 +6,9 @@
             {
                 "title": "Profile",
                 "path": "/profile"
+            },{
+                "title":"Historique de vaccination",
+                "path":"/Historique"
             },
             {
                 "title": "Settings",

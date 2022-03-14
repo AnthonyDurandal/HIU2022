@@ -6,12 +6,14 @@ import { listeHitorique, listeRappel } from "../mockupData/historique";
 
 import "./../styles/AdminDashboard.css";
 import "./HistoriqueVaccin.css";
+
+import items from './../data/clientSidebar.json'
 const HistoriqueVaccin = () => {
   const [historique, setHistorique] = useState([]);
   const [rappels, setRappels] = useState([]);
   return (
     <div className="admin-dashboard">
-      <Sidebar />
+      <Sidebar data={items}/>
       <DashboardHeader />
       <div className="content">
         <div className="content-child">
@@ -60,7 +62,7 @@ const HistoriqueVaccin = () => {
                         <td className="textCenter">{rappel.dateDisponible}</td>
                         <td className="textCenter">{rappel.vaccin}</td>
                         <td className="actionCol">
-                          <Button variant="info">Faire une demande</Button>
+                          <Button variant="info" onClick={e=>{window.location.replace("/ChoixCentre")}}>Faire une demande</Button>
                         </td>
                       </tr>
                     );

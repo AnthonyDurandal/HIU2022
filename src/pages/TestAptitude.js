@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import clientsidebar from './../data/clientSidebar.json'
 // import './../styles/AdminDashboard.css'
 import "./../styles/TestAptitude.css";
- const TestAptitude = () => {
+  const TestAptitude = () => {
   const questionTestPcr =
     "Avez-vous eu un test (PCR ou antigénique) positif au cours des 3 derniers mois ?";
   const [testPcr, setTestPcr] = useState();
@@ -28,6 +28,8 @@ import "./../styles/TestAptitude.css";
   const [enceinte, setEnceinte] = useState();
   const questionAllaitement = "Allaitez-vous ?";
   const [allaitement, setAllaitement] = useState();
+  const [liste ,setListe]=useState([]);
+  const [lock, setLock]= useState(false)
   return (
     <div className="admin-dashboard">
       <Sidebar data={clientsidebar}/>
@@ -36,6 +38,7 @@ import "./../styles/TestAptitude.css";
         <div className="formContainer">
           <div className="listeQuestionaire">
             <div className="titre">Test d'aptitude au vaccin</div>
+            <div className="disclaim">Veuillez</div>
             <Questionaire
               question={questionTestPcr}
               setState={setTestPcr}
@@ -45,13 +48,17 @@ import "./../styles/TestAptitude.css";
               question={questionVaccinRencent}
               setState={setVaccinRecent}
               checked={vaccinRecent}
-              choix={listeChoix}
+              choix={[
+                { value: 'CoviShield', label: 'CoviShield' },
+                { value: 'Janssen', label: 'Janssen' },
+                { value: 'AstraZeneca', label: 'AstraZeneca' }
+              ]}
+              placeholder={"Nom du vaccin"}
             ></Questionaire>
             <Questionaire
               question={questionAllergie}
               setState={setAllergie}
               checked={allergie}
-              choix={listeChoix}
             ></Questionaire>
             <Questionaire
               question={questionMedicament}
@@ -75,7 +82,7 @@ import "./../styles/TestAptitude.css";
             ></Questionaire>
           </div>
           <div className="actionContainer">
-            <Button variant="success" className="validationBut" onClick={e =>{window.location.replace("/ChoixVaccin")}}>Valider</Button>
+            <Button variant="success" className="validationBut" disabled={vaccinRecent} onClick={e =>{window.location.replace("/ChoixVaccin")}}>Valider</Button>
           </div>
         </div>
       </div>
@@ -84,3 +91,4 @@ import "./../styles/TestAptitude.css";
 };
 
 export default TestAptitude;
+
