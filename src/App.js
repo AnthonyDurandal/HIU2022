@@ -10,7 +10,8 @@ import ChoixVaccin from "./pages/ChoixVaccin";
 import Planning from "./pages/Planning";
 import Sensibilisation from "./pages/Sensibilisation";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TestAptitude } from "./pages/TestAptitude";
+import  TestAptitude  from "./pages/TestAptitude";
+import  TimeTable  from "./pages/TimeTable";
 import {herokuLink , localLink, fakeDataLink} from './config/Config';
 import AjoutStock from "./pages/AjoutStock";
 import HistoriqueVaccin from "./pages/HistoriqueVaccin";
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about" exact="true" element={<Accueil />} />
           <Route path="/login" exact="true" element={<Login />} />
           <Route path="/inscription" exact="true" element={<Inscription />} />
+          <Route path="/TimeTable" exact="true" element={<TimeTable />} />
          
           <Route path="/centre/accueil" exact="true" element={<Accueil />} />
           <Route path="/centre/ajoutStock" exact="true" element={<Accueil />} />
