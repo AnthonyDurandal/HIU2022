@@ -7,7 +7,7 @@ const Sidebar = (props) => {
     return (
         <div className='sidebar'>
             <div className='app-logo'>
-                <img src="./img/syringe.png" width="50" height="50" alt=""></img>
+                <img src="./../img/syringe.png" width="50" height="50" alt=""></img>
                 <div className="logo-text">  <a href="/Sensibilisation">ValizyRoulety2022</a></div>
             </div>
             {props.data.map((item, index) => <SidebarItem key={index} item={item}/>) }

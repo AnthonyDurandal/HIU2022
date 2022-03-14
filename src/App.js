@@ -48,7 +48,7 @@ function App() {
           <Route path="/Historique" exact="true" element={<HistoriqueVaccin />} />
         
           <Route path="/" exact="true" element={<Accueil />} />
-          <Route path="/choixCentre" exact="true" element={<ChoixCentre />} />
+          <Route path="/choixCentre/:id" exact="true" element={<ChoixCentre />} />
           <Route path="/ChoixVaccin" exact="true" element={<ChoixVaccin />} />
           <Route path="/Planning" exact="true" element={<Planning />} />
           <Route path="/Table" exact="true" element={<Table />} />

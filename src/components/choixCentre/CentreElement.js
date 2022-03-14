@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './../../styles/CentreElement.css'
 import Notification from '../notification/Notification';
 import PlanningModal from './PlanningModal';
-const CentreElement = (props) => {
+const CentreElement = ({centre:{id, nom}}) => {
     const [modalOption , setModalOption] = useState({show: false , idCentre :""})
     const [notify, setNotify] = useState({ isOpen: false, message: '', type: '' });
     const closeModal = ()=>{
@@ -23,8 +23,8 @@ const CentreElement = (props) => {
         <div className='centreElement'>
             <div className="centreMeta">
                <div className="centreTitle">
-                    <img src="./img/hopital.png" alt="" width="50" height="50"></img>
-                    <div className="centreNom">CHJU Befelatanana</div>
+                    <img src="http://localhost:3000/img/hopital.png" alt="" width="50" height="50"></img>
+                    <div className="centreNom">{nom}</div>
                </div>
                 <div className="centreOthers">
                    <p>horraire d'ouverture: 8:00 - 17:00</p>

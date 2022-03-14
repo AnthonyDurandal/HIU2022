@@ -60,9 +60,9 @@ const HistoriqueVaccin = () => {
                     return (
                       <tr>
                         <td className="textCenter">{rappel.dateDisponible}</td>
-                        <td className="textCenter">{rappel.vaccin}</td>
+                        <td className="textCenter">{rappel.vaccin.nom}</td>
                         <td className="actionCol">
-                          <Button variant="info" onClick={e=>{window.location.replace("/ChoixCentre")}}>Faire une demande</Button>
+                          <Button variant="info" onClick={e=>{window.location.replace(`/ChoixCentre/${rappel.vaccin.id}`)}}>Faire une demande</Button>
                         </td>
                       </tr>
                     );
